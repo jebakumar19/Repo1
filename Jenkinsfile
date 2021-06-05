@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'node:14-alpine' } }
+    agent { docker { image 'php' } }
     stages {
         stage('build') {
             steps {
-                echo 'Test'
+                echo 'php --version'
             }
         }
     }
